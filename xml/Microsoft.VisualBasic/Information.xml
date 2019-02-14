@@ -223,25 +223,23 @@ testVbName = VbTypeName(sysBadName)
         <Parameter Name="Expression" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="Expression">必須です。 整数型 (<see langword="Object" />) の式を指定します。</param>
-        <summary>式が有効な <see langword="Boolean" /> 値を表しているかどうかを示す <see langword="Date" /> 値を返します。</summary>
-        <returns>式が有効な <see langword="Boolean" /> 値を表しているかどうかを示す <see langword="Date" /> 値を返します。</returns>
+        <param name="Expression">必須です。 <see langword="Object" /> 式を指定します。</param>
+        <summary>式が有効な <see langword="Date" /> 値を表しているかどうかを示す <see langword="Boolean" /> 値を返します。</summary>
+        <returns>式が有効な <see langword="Date" /> 値を表しているかどうかを示す <see langword="Boolean" /> 値を返します。</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `IsDate` 返します`True`場合`Expression`は、<xref:System.DateTime>データを入力するかを返します。 それ以外に変換することができます`False`します。  
-  
- <xref:System.DateTime>データ型には、日付の値と時刻の値の両方が保持されます。 `IsDate` 返します`True`場合`Expression`有効な日付、有効な時刻または有効な日付と時刻を表します。  
-  
-   
+ `Expression`が<xref:System.DateTime>データ型であるか、それに変換できる場合、`IsDate`は`True`を返します。 それ以外の場合は`False`を返します。
+
+ <xref:System.DateTime>データ型は、日付値と時刻値の両方を保持します。 `Expression`が有効な日付、有効な時刻、または有効な日時を表す場合、`IsDate`は`True`を返します。
   
 ## Examples  
- 次の例では、`IsDate`いくつかの変数を表す有効なかどうかを判断する関数<xref:System.DateTime>値。  
+ 次の例では、`IsDate`関数を使用して、いくつかの変数が有効な<xref:System.DateTime>値を表しているかどうかを判断します。
   
  [!code-vb[VbVbalrFunctions#35](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrFunctions/VB/Class1.vb#35)]  
   
- 前の例では、`IsDate`返します`True`の最初の 4 つの呼び出しと`False`最後の呼び出し。  
+ 上記の例では、`IsDate`は最初の 4 つの呼び出しに対して`True`を返し、最後の呼び出しに対して`False`を返します。
   
  ]]></format>
         </remarks>
